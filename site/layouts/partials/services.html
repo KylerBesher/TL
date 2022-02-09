@@ -4,152 +4,45 @@
 
     <div class="mw7 f6 center pa3">
 
+        {{ with .Site.GetPage "/" }}
+        {{if eq .Params.tattoos.isDraft false}}
         <h3 class="f3 b primary altShadow2 specialFont mv2">TATTOOS</h3>
-
-        <div class="mb2">
-            <button class="accordion bg-grey-2 b">Before Your Tattoo</button>
+        {{range .Params.tattoos.sections}}
+        <div class="mb2 mt2">
+            <button class="accordion bg-grey-2 b">{{.title}}</button>
             <div class=" panel bg-grey-1 ">
                 <div class="pa3 cms">
-                    <h4 class="f3">Before you come in for a tattoo:</h4>
-                    <ul class="">
-                        <li>Make sure that you have had a well balanced meal to help prevent lightheadedness.
-                        </li>
-                        <li>You are more than welcome to bring something to drink with you, something with sugar in it
-                            is
-                            encouraged.
-                        </li>
-                        <li> Know that music will be playing in the shop, but if you would like to bring your own music
-                            you are
-                            welcome to
-                            bring a pair of headphones with you.
-                        </li>
-                    </ul>
+                    {{.content | markdownify}}
                 </div>
             </div>
+
+            {{end}}
         </div>
-
-        <div class="mb2">
-            <button class="accordion bg-grey-2  b">Aftercare</button>
-
-            <div class=" panel  bg-grey-1 cms">
-                {{ partial "tattooAftercare" .}}
-            </div>
-        </div>
-
-        <h3 class="f3 b primary altShadow2 specialFont mb2 ">PIERCINGS</h3>
-
-        <div class="mb2">
-            <button class="accordion bg-grey-2  b">Before Your Piercing</button>
-            <div class=" panel bg-grey-1 cms">
-                <ul class="pa3">
-                    <li>
-                        <span class="black b">General:</span> piercings are a wound. They can cause reactions,
-                        complications, as well as side effects.
-                        These
-                        include but aren't limited to skin irritation, loss of consciousness, swelling, bruising,
-                        bleeding
-                        (potentially excessively), and infections. We do everything we can to mitigate these issues, but
-                        you as a
-                        client should be aware that we are intentionally puncturing your skin.
-                    </li>
-                    <li>
-                        <span class="black b">Jewelry:</span> We pierce with implant grade stainless steel or titanium.
-                        <span class="b" style="text-transform: uppercase">Removing your jewelry can result in your
-                            piercing closing.</span></li>
-                    <li>
-                        <span class="black b">Infection:</span> Infections ARE RARE but can occur if and when apprpriate
-                        aftercare isn't followed.
-                        Please
-                        listen in order to minimize this risk. <span class="b" style="text-transform: uppercase"> Follow
-                            aftercare
-                            and contact us if you suspect a complication.</span></li>
-                    <li>
-                        <span class="black b">Medical Conditions:</span> If you have a preexisting medical or skin
-                        condition that affects your body's
-                        immune
-                        system or the body's healing abilities, you should consult your doctor before getting a
-                        piercing. If you
-                        have HIV infection, eczema, psoriasis, Immune Deficiency Disorders, diabetes, hempphilia, blood
-                        cancer,
-                        are or may become pregnant you are at a higher risk to infections, slow healing, and other
-                        complications
-                    </li>
-                    <li>
-                        <span class="black b">Medication:</span> If you are on any medications that might affect
-                        bleeding(blood thinners) or healing,
-                        you
-                        should talk to your doctor about any side effects as well as inform your piercer.</li>
-                    <li>
-                        <span class="black b">Lifestyle Changes:</span> Healing a piercing may require changes in diet,
-                        clothing, and sexual activities.
-                        All
-                        sohuld be considered beforehand.</li>
-                </ul>
-
-            </div>
-        </div>
+        {{end}}
+        {{ end }}
 
 
-
-        <div class="mb2">
-            <button class="accordion bg-grey-2  b">Aftercare</button>
-
-            <div class=" panel  pt4 bg-grey-1 cms  f6">
-                <div class="pa3">
-                    <h4>Cleaning Instructions for Body Piercings</h4>
-                    <h6 class="mt2">1. Wash Your Hands</h6>
-                    Prior to ever cleaning or touching your piercing for any reason make sure that you wash your hands
-                    with soap and water.
-                    <h6 class="mt2">2. Soak In Saline</h6>
-                    Spray sterile saline wound wash on your piercing for twenty seconds at least twice per day. If you
-                    get overly
-                    sweaty or dirty be you will want to clean it more than twice. Dry your piercing off with a clean
-                    q-tip
-                    <h6 class="mt2">3. Using soap</h6>
-                    If your piercer tells you that you need to use soap on your piercing, gently lather soap around the
-                    piercing and rinse as needed until all soap is removed.</h6>
-                    <h6 class="mt2">4. Drying Your Piercing</h6>
-                    Dry your piercing by gently patting it with clean paper towels. Do not use cloth towels as they can
-                    carry excess bacteria
-                    <h6 class="mt2">It is not necessary for you to rotate the jewelry.</h6>
-                    <br>
-
-
-                    <h4>Cleaning Instructions For Inside the Mouth</h4>
-                    <h6 class="mt2">1. Rinsing Your Mouth</h6>
-                    <p>Rince your mouth with antibacterial alcohol-free mouthwash for 30 seconds after meals and before
-                        bed (4-5 times daily) until the piercing is completely healed. Cleaning too often or with too
-                        strong a rinsecan cause irritation.</p>
-                    <h6 class="mt2">It is not necessary for you to rotate the jewelry.</h6>
-                    <br>
-
-
-
-
-
-                    <h4>Cleaning Instructions for the Exterior Cheek & Lip Piercings</h4>
-                    <h6 class="mt2">1. Wash Your Hands</h6>
-                    Prior to ever cleaning or touching your piercing for any reason make sure that you wash your hands
-                    with soap and water.
-                    <h6 class="mt2">2. Soak In Saline</h6>
-                    Spray sterile saline wound wash on your piercing for twenty seconds at least
-                    twice per day. If you get overly
-                    sweaty or dirty be you will want to clean it more than twice. Dry your piercing
-                    off with a clean q-tip
-                    </h6>
-                    <h6 class="mt2">3. Using soap</h6>
-                    If your piercer tells you that you need to use soap on your piercing, gently lather soap around the
-                    piercing and rinse as needed until all soap is removed.</h6>
-                    <h6 class="mt2">4. Drying Your Piercing</h6>
-                    Dry your piercing by gently patting it with clean paper towels. Do not use cloth towels as they can
-                    carry excess bacteria
-                    <h6 class="mt2">It is not necessary for you to rotate the jewelry.</h6>
-
+        {{ with .Site.GetPage "/" }}
+        {{if eq .Params.piercings.isDraft false}}
+        <h3 class="f3 b primary altShadow2 specialFont mv2">PIERCINGS</h3>
+        {{range .Params.piercings.sections}}
+        <div class="mt2">
+            <button class="accordion bg-grey-2 b">{{.title}}</button>
+            <div class=" panel bg-grey-1 ">
+                <div class="pa3 cms">
+                    {{.content | markdownify}}
                 </div>
-
             </div>
+
+            {{end}}
         </div>
+        {{end}}
+        {{ end }}
 
 
+
+
+
+    </div>
     </div>
 </div>
