@@ -137,12 +137,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Parallax Image 3, name: parallax3, widget: image }
           - { label: Parallax Image 4, name: parallax4, widget: image }
           - {
-              label: "Tattoos Pre/Aftercare",
-              name: tattoos,
-              widget: object,
+              label: "Care Section",
+              name: aftercare,
+              widget: list,
 
               fields:
                 [
+                  { label: "Type", name: "type", widget: select, options: ["Tattoos", "Piercings"] },
                   { label: "Is Hidden", name: "isDraft", widget: boolean },
                   {
                     label: "Sections",

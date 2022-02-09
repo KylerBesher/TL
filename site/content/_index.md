@@ -11,6 +11,7 @@ blurb:
     text: "True Love Tattoo is located in the heart of downtown Salina! Our professionally licensed artists have the experience, skill, and expertise to give you truly a one of a kind tattoo or piercing experience.  Our artists have years of experience in the tattoo industry and know exactly what it takes to deliver the results you expect. Whether you are getting your first piercing or your 30th tattoo, True Love is sure to give you exactly what you're looking for! Come on in and see us today!"
     image: /img/flash1.png
 
+
 aftercare:
     - isDraft: false
       type: Tattoos
@@ -103,6 +104,11 @@ aftercare:
           Dry your piercing by gently patting it with clean paper towels. Do   not use cloth towels as they can carry excess bacteria
           
           ##### It is not necessary for you to rotate the jewelry.
+
+artists:
+    heading: Meet Our Artists
+    text: "Whether you are wanting to get a tattoo or a piercing we have trained professionals on staff to help you get exactly what you are looking for. Keep an eye out on this section for new staff and guest artists!"
+
 faqs:
     - question: Can I get a quote over the phone?
       answer: While we are able to get estimates via electroniccommunication   in special circumstances, the best way to get a quotefor your next   tattoo is to come in to the shop with as muchinformation as you have,   including any reference materials.

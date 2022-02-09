@@ -1,7 +1,8 @@
 <div id="artists" class="relative pv4 bg-black-2 white">
-    {{ partial "header" (dict "heading" "Meet Our Artists" )}}
+        {{ with .Site.GetPage "/" }}
+    {{ partial "header" (dict "heading" .Params.artists.heading )}}
     <p class="mw7 center tj f6 ph4">
-        Whether you are wanting to get a tattoo or a piercing we have trained professionals on staff to help you get exactly what you are looking for. Keep an eye out on this section for new staff and guest artists! 
+        {{.Params.artists.text}}
     </p>
     <div class="flex flex-column flex-row-ns flex-wrap justify-center mw7 specialFont center">
         {{range sort (where .Site.Pages "Type" "artists") "Weight"}}
@@ -10,4 +11,5 @@
         {{end}}
         {{ end }}
     </div>
+            {{ end }}
 </div>
