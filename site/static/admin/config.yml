@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
 
-media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/img" 
 public_folder: "img"
 
-collections: # A list of collections the CMS should be able to edit
-  - name: "artists" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Artist" # Used in the UI, ie.: "New Post"
-    folder: "site/content/artists" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+collections:
+  - name: "artists"
+    label: "Artist"
+    folder: "site/content/artists"
+    create: true
+    fields:
       - {
           label: "Title",
           name: "title",
@@ -92,26 +92,6 @@ collections: # A list of collections the CMS should be able to edit
               { label: "Outside", name: "outside", widget: text },
             ],
         }
-      # - { label: "Intro Blurb", name: "description", widget: "text" }
-      # - { label: "Image", name: "image", widget: "image", required: false }
-      # - { label: "Body", name: "body", widget: "markdown" }
-      # - {
-      #     label: "Tattoos",
-      #     name: tattoos,
-      #     widget: list,
-      #     fields: [{ label: "Test", name: "test", widget: "markdown" }],
-      #   }
-  #   {
-  #   label: "Social Item",
-  #   name: item,
-  #   widget: object,
-  #   fields:
-  #     [
-  #       { label: "Type", name: "type", widget: string },
-  #       { label: "Link", name: "link", widget: string },
-
-  #     ],
-  # }
 
   - name: "pages"
     label: "Main Page"
@@ -121,6 +101,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Video, name: video, widget: file,  }
 
           - {
               label: "About True Love",
@@ -133,9 +114,7 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
           - { label: Parallax Image 1, name: parallax1, widget: image }
-          - { label: Parallax Image 2, name: parallax2, widget: image }
-          - { label: Parallax Image 3, name: parallax3, widget: image }
-          - { label: Parallax Image 4, name: parallax4, widget: image }
+
           - {
               label: "Care Section",
               name: aftercare,
@@ -143,19 +122,49 @@ collections: # A list of collections the CMS should be able to edit
 
               fields:
                 [
-                  { label: "Type", name: "type", widget: select, options: ["Tattoos", "Piercings"] },
+                  {
+                    label: "Type",
+                    name: "type",
+                    widget: select,
+                    options: ["Tattoos", "Piercings"],
+                  },
                   { label: "Is Hidden", name: "isDraft", widget: boolean },
                   {
                     label: "Sections",
                     name: sections,
                     widget: list,
-                    fields: [
-                      { label: Heading, name: title, widget: string },
-                      { label: Body, name: content, widget: markdown },
-                    ],
+                    fields:
+                      [
+                        { label: Heading, name: title, widget: string },
+                        { label: Body, name: content, widget: markdown },
+                      ],
                   },
                 ],
             }
+          - { label: Parallax Image 2, name: parallax2, widget: image }
+
+          - {
+              label: "Artists",
+              name: artists,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Text", name: "text", widget: "text" },
+                ],
+            }
+          - { label: Parallax Image 3, name: parallax3, widget: image }
+          - {
+              label: "Faqs",
+              name: faqs,
+              widget: list,
+              fields:
+                [
+                  { label: "Heading", name: "question", widget: string },
+                  { label: "Content", name: "answer", widget: text },
+                ],
+            }
+          - { label: Parallax Image 4, name: parallax4, widget: image }
           # - {
           #     label: "Intro",
           #     name: intro,

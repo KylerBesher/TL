@@ -1,11 +1,11 @@
 ---
 title: "Home"
 image: /img/home-jumbotron.jpg
-video: /video/truelovevideo_3.mp4
+video: /img/truelovevideo_3.mp4
 parallax1: "/img/chase_tattooing.jpg"
-parallax2: "/img/staff.jpg"
+parallax2: "/img/chase_drawing.jpg"
 parallax3: "/img/chase_prepping.jpg"
-parallax4: "/img/michael_prepping.jpg"
+parallax4: "/img/shopLandscape.jpg"
 blurb:
     heading: About True Love
     text: "True Love Tattoo is located in the heart of downtown Salina! Our professionally licensed artists have the experience, skill, and expertise to give you truly a one of a kind tattoo or piercing experience.  Our artists have years of experience in the tattoo industry and know exactly what it takes to deliver the results you expect. Whether you are getting your first piercing or your 30th tattoo, True Love is sure to give you exactly what you're looking for! Come on in and see us today!"
@@ -154,10 +154,10 @@ info:
   phone: 785-833-5083
 
   hours:
-      - day: Sunday - Monday
-        times: Closed
       - day: Tuesday - Saturday
         times: 11:00 am - 8:00 pm
+      - day: Sunday - Monday
+        times: Closed
 mapIframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722. 3850121719527!2d-97.60925639777585!3d38. 839748108647186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x87bcc5ba6f13511b%3A0x1fad5d9fef2c4260!2sTrue+Love +Tattoo!5e0!3m2!1sen!2sus!4v1566358472073!5m2!1sen!2sus
 ---
 asdfasdf
