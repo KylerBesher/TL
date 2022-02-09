@@ -1,16 +1,21 @@
 ---
 title: Chase
-position: Tattooer/Owner
+
 firstName: Chase
 lastName: Wheeler
+
+position: Tattooer/Owner
+
 imageColor: /img/chase_color.jpg
 imageBw: /img/chase_bw.jpg
-imageProfile: /img/chase_profile.jpg
+
 weight: 0
-bg: staff3
+
+
+imageProfile: /img/chase_profile.jpg
 igProfile: chasewheelertattoo
 fbProfile: chasewheelertattoo
-imageUrl: /img/piercingBackground.jpg
+
 social:
     - type: icons-facebook
       link: https://www.facebook.com/chasewheelertattoos/
@@ -19,7 +24,6 @@ social:
 bio: 
   type: Tattooing
   since: 2006
-  text: 
   inspired: I am really lucky to be able to do tattoos for a living. I have loved doing art for as long as I can remember. The opportunity to make art that patrons can wear for the rest of their lives is why I do what I do. 
   specializes: I don't specialize in any one style of tattooing. My mom taught me how to draw as a kid, and since then I have worked on lots of different styles. While I don't speicalize in any particular style my favorite I really enjoy traditional tattoos because of their bold color and design.  
   firstTattoo: One of my favorite tattoos is a panther that I got on my right shoulder by Richard Stell. When I got this tattoo I wasn't even very interested in panthers, but I saw how he did panthers and decided that I wanted one. 

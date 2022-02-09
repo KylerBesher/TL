@@ -7,16 +7,16 @@
 <div class="relative z-999 mv0">
     {{ partial "about" .Params.blurb}}
 
-    {{ partial "parallax" (dict "backgroundImage" "/img/chase_tattooing.jpg" "text" "True Love Staff") }}
+    {{ partial "parallax" (dict "backgroundImage" .Params.parallax1 "text" "True Love Staff") }}
     {{ partial "services" .}}
 
-    {{ partial "parallax" (dict "backgroundImage" "/img/staff.jpg" "text" "True Love Staff") }}
+    {{ partial "parallax" (dict "backgroundImage" .Params.parallax2 "text" "True Love Staff") }}
     {{ partial "artists" .}}
 
-    {{ partial "parallax" (dict "backgroundImage" "/img/chase_prepping.jpg" "text" "About True Love") }}
+    {{ partial "parallax" (dict "backgroundImage" .Params.parallax3 "text" "About True Love") }}
     {{ partial "faq" .}}
 
-    {{ partial "parallax" (dict "backgroundImage" "/img/michael_prepping.jpg" "text" "About True Love") }}
+    {{ partial "parallax" (dict "backgroundImage" .Params.parallax4 "text" "About True Love") }}
     {{ partial "shop" .}}
 
 

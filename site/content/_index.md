@@ -2,7 +2,10 @@
 title: "Home"
 image: /img/home-jumbotron.jpg
 video: /video/truelovevideo_3.mp4
-
+parallax1: "/img/chase_tattooing.jpg"
+parallax2: "/img/staff.jpg"
+parallax3: "/img/chase_prepping.jpg"
+parallax4: "/img/michael_prepping.jpg"
 blurb:
     heading: About True Love
     text: "True Love Tattoo is located in the heart of downtown Salina! Our professionally licensed artists have the experience, skill, and expertise to give you truly a one of a kind tattoo or piercing experience.  Our artists have years of experience in the tattoo industry and know exactly what it takes to deliver the results you expect. Whether you are getting your first piercing or your 30th tattoo, True Love is sure to give you exactly what you're looking for! Come on in and see us today!"
