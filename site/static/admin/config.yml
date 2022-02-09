@@ -18,9 +18,24 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: "First Name", name: "firstName", widget: "string" }
       - { label: "Last Name", name: "lastName", widget: "string" }
-      - { label: "Individual Profile Image", name: "imageProfile", widget: "image", required: true }
-      - { label: "Color Homepage Image", name: "imageColor", widget: "image", required: true }
-      - { label: "B&W Homepage Image", name: "imageBw", widget: "image", required: true }
+      - {
+          label: "Individual Profile Image",
+          name: "imageProfile",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Color Homepage Image",
+          name: "imageColor",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "B&W Homepage Image",
+          name: "imageBw",
+          widget: "image",
+          required: true,
+        }
 
       - {
           label: "Position",
@@ -106,7 +121,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - { label: Title, name: title, widget: string }
-          
+
           - {
               label: "About True Love",
               name: blurb,
@@ -118,7 +133,28 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
           - { label: Parallax Image 1, name: parallax1, widget: image }
-            
+          - { label: Parallax Image 2, name: parallax2, widget: image }
+          - { label: Parallax Image 3, name: parallax3, widget: image }
+          - { label: Parallax Image 4, name: parallax4, widget: image }
+          - {
+              label: "Tattoos Pre/Aftercare",
+              name: tattoos,
+              widget: object,
+
+              fields:
+                [
+                  { label: "Is Hidden", name: "isDraft", widget: boolean },
+                  {
+                    label: "Sections",
+                    name: sections,
+                    widget: list,
+                    fields: [
+                      { label: Heading, name: title, widget: string },
+                      { label: Body, name: content, widget: markdown },
+                    ],
+                  },
+                ],
+            }
           # - {
           #     label: "Intro",
           #     name: intro,

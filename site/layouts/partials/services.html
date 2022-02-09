@@ -5,9 +5,12 @@
     <div class="mw7 f6 center pa3">
 
         {{ with .Site.GetPage "/" }}
-        {{if eq .Params.tattoos.isDraft false}}
-        <h3 class="f3 b primary altShadow2 specialFont mv2">TATTOOS</h3>
-        {{range .Params.tattoos.sections}}
+        {{range .Params.aftercare}}
+        {{if eq .isDraft false}}
+        <h3 class="f3 b primary altShadow2 specialFont mv2">{{.type}}</h3>
+        {{range .sections}}
+
+
         <div class="mb2 mt2">
             <button class="accordion bg-grey-2 b">{{.title}}</button>
             <div class=" panel bg-grey-1 ">
@@ -18,31 +21,18 @@
 
             {{end}}
         </div>
+
         {{end}}
+
         {{ end }}
-
-
-        {{ with .Site.GetPage "/" }}
-        {{if eq .Params.piercings.isDraft false}}
-        <h3 class="f3 b primary altShadow2 specialFont mv2">PIERCINGS</h3>
-        {{range .Params.piercings.sections}}
-        <div class="mt2">
-            <button class="accordion bg-grey-2 b">{{.title}}</button>
-            <div class=" panel bg-grey-1 ">
-                <div class="pa3 cms">
-                    {{.content | markdownify}}
-                </div>
-            </div>
-
-            {{end}}
-        </div>
-        {{end}}
         {{ end }}
 
 
 
 
 
+
+
     </div>
-    </div>
+</div>
 </div>
