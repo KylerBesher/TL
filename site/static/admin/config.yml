@@ -100,8 +100,8 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Video, name: video, widget: file,  }
+          - { label: Title, name: title, widget: hidden, default: "Home"}
+          - { label: Video, name: video, widget: file, hint: Make sure that this is an MP4 file }
 
           - {
               label: "About True Love",
