@@ -53,7 +53,9 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="/app.js"></script>
-	<script src="/main.js"></script>
+	{{ $app := .Site.Data.webpack.app }}
+	{{ with $app.js }}
+	<script src="{{ relURL . }}"></script>
+	{{ end }}
 
 </head>
