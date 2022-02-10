@@ -9,7 +9,7 @@ module.exports = {
   entry: {
     main: path.join(__dirname, "src", "index.js"),
     cms: path.join(__dirname, "src", "js", "cms.js"),
-    app: path.join(__dirname, "src", "js", "app.js"),
+    cms: path.join(__dirname, "src", "js", "app.js"),
   },
 
   output: {
@@ -26,7 +26,7 @@ module.exports = {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        query: { cacheDirectory: true }
       },
       {
         test: /\.(sa|sc|c)ss$/,
